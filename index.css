@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-areas: "header header header"
+                          "nav article ads"
+                          "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 28% 1fr 28%;
+    grid-gap: 10px;
+    height: 50vh;
+    margin: 100px;
+}
+.head{
+    background-color: brown;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+#pageHeader {
+    grid-area: header;
+}
+  #pageFooter {
+    grid-area: footer;
+}
+  #mainArticle { 
+    grid-area: article;      
+ }
+  #mainNav { 
+    grid-area: nav; 
+}
+  #siteAds { 
+    grid-area: ads; 
+}
